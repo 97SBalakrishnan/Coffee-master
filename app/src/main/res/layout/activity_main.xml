@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brown"
+    tools:context="com.example.user.coffe.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Coffee Calculator"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textColor="@android:color/black"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/coffeimg"/>
+    <EditText
+        android:id="@+id/cost"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="210dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="per coffee in ₹"
+        />
+
+    <TextView
+        android:id="@+id/qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="310dp"
+        android:layout_centerHorizontal="true"
+
+        android:text="0"
+
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textSize="30dp"
+
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="135dp"
+        android:text="+"
+
+        android:onClick="onPlus"
+        android:textColor="@color/white"
+        android:background="@color/black"
+
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="50dp"
+        android:textSize="30dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="360dp"
+        android:layout_toEndOf="@+id/button"
+        android:text="-"
+        android:onClick="onMinus"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:layout_centerHorizontal="true"
+
+        android:text="Calculate"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:onClick="onCalcClick"/>
+
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="45dp"
+
+        android:text="Cost"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No. of Cups"
+        android:layout_marginTop="19dp"
+
+
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/cost"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
